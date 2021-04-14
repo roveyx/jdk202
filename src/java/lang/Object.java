@@ -89,18 +89,21 @@ public class Object {
     public final native Class<?> getClass();
 
     /**
-     * Returns a hash code value for the object. This method is
-     * supported for the benefit of hash tables such as those provided by
-     * {@link java.util.HashMap}.
+     * Returns a hash code value for the object.
+     * --- 返回这个对象的 hash code。
+     * This method is supported for the benefit of hash tables such as those provided by {@link java.util.HashMap}.
+     * --- 支持这种方法是为了使用哈希表，例如 java.util.HashMap 提供的哈希表。
      * <p>
      * The general contract of {@code hashCode} is:
+     * --- hashCode 的使用规则：
      * <ul>
-     * <li>Whenever it is invoked on the same object more than once during
-     *     an execution of a Java application, the {@code hashCode} method
-     *     must consistently return the same integer, provided no information
-     *     used in {@code equals} comparisons on the object is modified.
+     * <li>Whenever it is invoked on the same object more than once during an execution of a Java application,
+     *     the hashCode method must consistently return the same integer,
+     *     provided no information used in equals comparisons on the object is modified.
      *     This integer need not remain consistent from one execution of an
      *     application to another execution of the same application.
+     *     --- 每当在Java应用程序执行期间多次对同一个对象调用 hashCode() 时，只要没有修改在对象上的相等比较中使用的信息，
+     *     该方法就必须一致地返回相同的整数。
      * <li>If two objects are equal according to the {@code equals(Object)}
      *     method, then calling the {@code hashCode} method on each of
      *     the two objects must produce the same integer result.
